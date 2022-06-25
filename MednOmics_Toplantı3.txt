@@ -1,0 +1,56 @@
+23.04.2022 3. Toplantı
+
+23 Nisan, neşeyle doluyor insan?
+Katılımcılar: Mustafa, Ali Osman, Ayşe Gökçe, Fatma Betül
+
+STRING ödevi üzerinden hipoteze bakış.
+
+Mustafa: EGFR-Ras?
+STRING'de XXX ile ilşkili XXX hastalarındaki genin ilşkisel proteinleri tespit edip; cBioportal'da mutasyon için survival (ölüm kalım) 
+testi ile yaşamsal önemini tespit etmek (tanı/tedavi için önemli olabilir).
+
+Ayşe geri-dönüt: Ölüm kalım analizlerinde sample size (veri-seti büyüklüğü önemli).
+İfade analizi başlangıç için faydalı olabilir. Bu durumda, bazı ilişkisel genler için GEO'dan ön analiz. (Kendi minik analiz aracı var GEO'nun da).
+Diğer downstream genlerle ilşkisine bakmak da geniş bir açı verebilir. Diğer bağlanan genlere ki bu ilişki XXX ile YYY arasında özel mi değil mi (specific or not).
+
+Ali Osman: TRAIL-RAC1 ilşkisi (KRAS bağı üzerinden)
+Arkaplan: XXX(TRAIL)'in negatif prognostif belirteç olarak bazı kanserlerde kullanılıyor olması.
+Bu yolağı çalışmak açısından fare modelinin var olması.
+Modifikasyonun squamous cell carcinoma (SCC) vs. adenocarcinoma (AC) üzerinde etki farkı.
+
+Rac-TRAIL ilişkisi üzerinden Rho Family ve DOCK family üzerinden STRING ilişki ağının araştırılması.
+
+KRAS mutasyonu ile yakından ilişkili üç kanser tipinde bu genlerin araştırılması.
+
+Ali Osman'ın makale ve video önerisi:
+https://pubmed.ncbi.nlm.nih.gov/30664679/
+https://www.youtube.com/watch?v=lcfrqe3gvr4&t=2751s
+
+Ayşe geri-dönüt: Birbirine bağlanıyorlarsa, direk ilişkili olmaları normal. Ancak, negatif-pozitif korelasyon, aileler içindeki genleri işlevlerini tanımlamak açısından faydalı olabilir. Kısacası bir bütün olarak çalışmak.
+Metastaz verisi yoksa, metastazı işaret eden EMT marker (belirteç) bakılabilir.
+cBioportal'daki XXX(RAC1) geni negatif ve pozitif ilşkili genleri ayrı ayrı alıp, STRING'e koyup aralarında EMT işareti gösteren bir ilişki var mı yok mu ayrıca bakılabilir.
+Sağlıklı dokular üzerinden, doku özelinde gen ifade verisi: gtex, https://gtexportal.org/home/
+Normal ve. kanser:
+ccle, https://sites.broadinstitute.org/ccle/
+nci-60, https://dtp.cancer.gov/discovery_development/nci-60/
+ucsc-xena, https://xenabrowser.net/
+
+Ayşe, XenaBrowser demo gösterimi.
+
+Ayşe, GEO Datasets üzerinden veria analiz demo gösterim.
+
+GEO, https://www.ncbi.nlm.nih.gov/geo/
+Örnek veriseti: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190731
+
+Search gene diyince NCBI'da, burada ilki datasetler ikincii örnekler için. İlkini seç.
+GEO Datasets'i soldan seçimi daha özelleştirip daralatabilirsiniz.
+GSE numarası önemli, verisetlerin kimlik numarası (ID).
+
+Bazen işlem yapılmamış, raw veriyi bulmak mümkün.
+Series matrix file, normalize edilmiş veriler genelde.
+logFC: log cinsinden fold change (değişim) değeri. +, artış;-, azalış (kontrole göre).
+x-axis'e bakmak lazım. Bazı genlerin zaten ifade değeri çok düşük, o yüzden ufak değişimler bile yüksek logFC ile sonuçlanabilir ancak ifade ettiği anlam yeterli olmayabilir.
+
+Expression Atlas, https://www.ebi.ac.uk/gxa/home
+Doku özel, ifade değerine bakmak için faydalı olabilir
+Firebrowse da işe yarayabilir, http://firebrowse.org/viewGene.html
