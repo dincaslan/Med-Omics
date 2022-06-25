@@ -1,0 +1,43 @@
+25.06.2022 MednOmics 6. Toplantı 
+Katılımcılar: Mustafa, Ali Osman, Ayşe Gökçe, Fatma Betül
+
+Bugün genel olarak program nasıl geçti, neleri öğrenmek iyiydi, nereler eksik kaldı (öğrenecek yeni konular) gibi soruları cevapladık.
+
+* cBioPortal
+* STRING
+* Geo Database/GEO2R
+* GALAXY
+gibi araçlara aşinalık kazanıp,
+
+* Survival Graphs
+* FDR, q value
+ve diğer bazı grafik yorumlama ve istatistik analizler konusunda altyapı kazanmanın epey faydalı olduğuna kanaat getirildi.
+
+Ancak, RNA-Seq ve R'da analiz gibi medikal öğrencilerin sıklıkla kullanmadığı teknik ve yöntemleri kullanırken biraz daha katılımcıların aktif olması ve ön araştırma yapması gerektiği sonucuna varıldı.
+Bu konuda mentorler olarak teşvik etmek için "Aşinalık kazandıracak soru listesi", "Worksheet" gibi ön ödevlerle öğrencilerin aktif katılımının ve aşinalık aşamasının hızlandırılması önerildi.
+
+Öte yandan, bir hipotez üzerinde tartışma ve ilerlemenin iyileştirilmesi konusunda 2 öneri sunuldu:
+1- önceden planlanmış veyahut hazır bir hipotezin adım adım takip edilmesi
+2- gruplar oluşturup, katılımcıların kendi hipotezleri ile grup olarak çalışması
+
+Gelecek için de şunlar planlandı:
+* İstatistik için ayrı bir ders. Böylece FDR, Enrichment Analysis, parametricve non-parametric testler gibi konular ve ayrımların daha detaylı tartışılması. 
+Bunun için şu öne çıktı: 
+1- Önce teorik ders (ilk zoom)
+2- Sonra R'da uygulamalı bio-istatistik (ikinci zoom)
+
+Bunun haricinde
+* Expression Atlas gibi araçların da etkin kulanımının faydasının öne çıkarılması, mesela "hangi gen hangi durumda hangi dokuda farklı davranmış" ve "meta-analizler"de kullanışlı olması gibi bilgilerin gözden kaçması ihtimaline karşı, eski notlara bir geri bakış tavsiye edildi.
+
+* Single-cell RNA seq giriş dersi (Fatma)
+
+* Multi-modal sequencing approaches
+* Differential co-expression networks/analysis
+gibi konuların Jouurnal club gibi 15dklık bir makale tartışmasını takiben method üzerinde yoğunlaşarak anlatılması/çalışılmasına karar kılındı.
+
+* Özellikle medikal öğrencilerin biyoenformatik eğitimi konusunda nerden başlaması ve nasıl ilerlemesi konusunda örnek kaynak listesi oluşturulmasına karar verildi. 
+Bu amaçla 3 adımdan bahsedildi:
+1- RSG Blog'da öncü köşe yazısı (ilk deneyimlerimiz)
+2- RSG Blog'da serinin devamı yazımız, gelecek deneyimlerimizle.
+3- Bütün bunların "Bootcamp" olarak bir website ve github kaynak listesinde detaylı olarak toplanıp halka açık kaynak olarak arz edilmesi.
+
