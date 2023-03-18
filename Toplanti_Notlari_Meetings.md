@@ -253,14 +253,14 @@ Ancak, RNA-Seq ve R'da analiz gibi medikal öğrencilerin sıklıkla kullanmadı
 Bu konuda mentorler olarak teşvik etmek için "Aşinalık kazandıracak soru listesi", "Worksheet" gibi ön ödevlerle öğrencilerin aktif katılımının ve aşinalık aşamasının hızlandırılması önerildi.
 
 Öte yandan, bir hipotez üzerinde tartışma ve ilerlemenin iyileştirilmesi konusunda 2 öneri sunuldu:
-1- önceden planlanmış veyahut hazır bir hipotezin adım adım takip edilmesi
-2- gruplar oluşturup, katılımcıların kendi hipotezleri ile grup olarak çalışması
+1. önceden planlanmış veyahut hazır bir hipotezin adım adım takip edilmesi
+2. gruplar oluşturup, katılımcıların kendi hipotezleri ile grup olarak çalışması
 
 Gelecek için de şunlar planlandı:
 * İstatistik için ayrı bir ders. Böylece FDR, Enrichment Analysis, parametricve non-parametric testler gibi konular ve ayrımların daha detaylı tartışılması. 
 Bunun için şu öne çıktı: 
-1- Önce teorik ders (ilk zoom)
-2- Sonra R'da uygulamalı bio-istatistik (ikinci zoom)
+1. Önce teorik ders (ilk zoom)
+2. Sonra R'da uygulamalı bio-istatistik (ikinci zoom)
 
 Bunun haricinde
 * Expression Atlas gibi araçların da etkin kulanımının faydasının öne çıkarılması, mesela "hangi gen hangi durumda hangi dokuda farklı davranmış" ve "meta-analizler"de kullanışlı olması gibi bilgilerin gözden kaçması ihtimaline karşı, eski notlara bir geri bakış tavsiye edildi.
@@ -268,78 +268,197 @@ Bunun haricinde
 * Single-cell RNA seq giriş dersi (Fatma)
 
 * Multi-modal sequencing approaches
+  
 * Differential co-expression networks/analysis
 gibi konuların Jouurnal club gibi 15dklık bir makale tartışmasını takiben method üzerinde yoğunlaşarak anlatılması/çalışılmasına karar kılındı.
 
 * Özellikle medikal öğrencilerin biyoenformatik eğitimi konusunda nerden başlaması ve nasıl ilerlemesi konusunda örnek kaynak listesi oluşturulmasına karar verildi. 
 Bu amaçla 3 adımdan bahsedildi:
-1- RSG Blog'da öncü köşe yazısı (ilk deneyimlerimiz)
-2- RSG Blog'da serinin devamı yazımız, gelecek deneyimlerimizle.
-3- Bütün bunların "Bootcamp" olarak bir website ve github kaynak listesinde detaylı olarak toplanıp halka açık kaynak olarak arz edilmesi.
+  
+1. RSG Blog'da öncü köşe yazısı (ilk deneyimlerimiz)
+  
+2. RSG Blog'da serinin devamı yazımız, gelecek deneyimlerimizle.
+  
+3. Bütün bunların "Bootcamp" olarak bir website ve github kaynak listesinde detaylı olarak toplanıp halka açık kaynak olarak arz edilmesi.
   
 </details>
 
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>16/7/22 Köşe Yazısı </summary>
 
-### Toplantı 2
+### Toplantı 7
+Katılımcılar: Mustafa, Ali Osman, Fatma Betül
   
-<details>
+Med&Omics: Hekimler için Biyoinformatik serimizin ilk yazısı-son düzeltmeler için toplandık.
+
+Üzerinden geçilecek mevzulara değindik.
+GEO2R/RNA-Seq gibi araçları yeniden gözden geçirmek gibi.
+
+İki hafta sonra davetlimiz olabilir (buraya ateş emojisi koyduğumu varsayalım).
+
+Alternatif olarak, bir sonraki toplantı için Ensembl-BioMart'a giriş tutorial' planladık.
+
+Return of Ayşe Jedi'den sonrası için de R'da RNA-Seq'i takiben Data-viz ve İstatistik.
+  
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>6/8/22 Ensembl</summary>
 
-### Toplantı 2
+### Toplantı 8
+Katılımcılar: Mustafa, Ali Osman, Fatma Betül
   
-<details>
+Ensembl Biomart giriş tutorial yapıldı (genelist dosyası genleri ile)
+https://www.ensembl.org/biomart/martview/d2352fab41407dc6a6855b9c950d4817
+
+BioMart YouTube tutorial: https://asia.ensembl.org/info/genome/stable_ids/index.html
+BioMart Guide: https://www.ensembl.org/info/data/biomart/index.html
+
+Ensembl Biomart'ın kapsamlı veri bankaları arası gen/transcript karşılık gelen tek tek farklı özellikleri/karşılığı incelendi (ENSGXXXXXX'in HGNC ID'si, Gene Type'ı, GO description vs.).
+
+Ensembl id version derken ne kastedildiğine bakıldı: https://ensembl.org/info/genome/stable_ids/index.html
+
+Ali Osman alternatif önerdi: https://biit.cs.ut.ee/gprofiler/gost
+Veyahut: https://www.genenames.org/
+  
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>10/9/22 TCGA Mutasyon Bilgisi</summary>
 
-### Toplantı 2
-  
-<details>
+### Toplantı 9
+Katılımcılar: Mustafa, Ali Osman, Fatma Betül
+
+Sorun: 
+3 SNP'nin devamında gelen genlerin ifade ve protein miktarını nasıl etkilediğini
+
+TCGA verisetinden germline mutasyon bilgisini nasıl çıkabilirim?
+
+Whole Genome Seq verietleri etik izinler sebebiyle germline mutasyon bilgisine ulaşması zor.
+TCGA yerine küçük verisetlerine bakılabilir. Whole exome dizileme verisetleri vs.
+NCBI-dbGaP bir alternatif olabilir.
+
+
+Bütün TCGA verisetinde mutasyonun etkisine bakış
+Cell-line verisetlerine bakmak bir diğer alternatif
+https://depmap.org/portal/
+https://cellmodelpassports.sanger.ac.uk/
+
+https://dcc.icgc.org/pcawg
+
+Bugünden kısa kısa:
+Whole exome dizileme, etik izni kolaylığı ve daha ucuz ooması sebebiyle bazı çalışmalarda whole genome göre daha çok tercih edilebiliyor.
+
+Sonrası:Genome dizileme'ye giriş. 
+UCSC üzerinden kullanım.
+
+İstatistik istatistik istatistik
+
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>24/9/22 qPCR Giriş</summary>
 
-### Toplantı 2
+### Toplantı 10
+Katılımcılar: Mustafa, Ali Osman, Fatma Betül, Ayşe Gökçe
+
+qPCR veri analizi
+qPCR veri yorumlaması
+Ct vs.Tm* 
+
+*Oligo dizayn ederkenki annealing Tm ile qPCR sonunda melting curve ile ortaya çıkan Tm ile aynı değil. 
+Melting curve analizi detaylı bilgi:
+- https://sg.idtdna.com/pages/education/decoded/article/interpreting-melt-curves-an-indicator-not-a-diagnosis
+- https://www.gene-quantification.de/real-time-pcr-handbook-life-technologies-update-flr.pdf
+
+qPCR çalışma prensibi, dizayn ve replikaları hakkında detaylı bilgi:
+- https://www.thermofisher.com/sg/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/gene-expression-analysis-real-time-pcr-information/precision-qpcr.html
+- https://www.thermofisher.com/sg/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/gene-expression-analysis-real-time-pcr-information/introduction-gene-expression.html
+- https://fatmab-dincaslan.medium.com/qpcr-primer-design-tutorial-879311c591aa
+
+qPCR verisi analiz etme üzerine Livak ve ondan doğan referans hakkında detaylı bilgi:
+- http://gene-quantification.net/livak-2001.pdf
+- https://www.nature.com/articles/nprot.2008.73
+- https://academic.oup.com/nar/article/29/9/e45/2384081?login=true (efficiency meselesi hk.)
+- https://www.thermofisher.com/sg/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/absolute-vs-relative-quantification-real-time-pcr.html
+
+Graphpad statistics guide: 
+- https://www.graphpad.com/guides/prism/latest/statistics/index.htm
   
-<details>
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>3/12/22 Ali Osman Proje</summary>
 
-### Toplantı 2
+### Toplantı 11
+Katılımcılar: Ali Osman, Fatma Betül, Ayşe Gökçe
+
+Bundan önce Ali Osman'ın sorusuna binanen Ayşe'nin önerdiği verilen gen seti için TF bulma için tool: https://maayanlab.cloud/chea3/
+"Transcription factors (TFs) are proteins that control gene expression by binding and unbinding near coding regions to regulate the transcriptional machinery. TF enrichment analysis (TFEA) prioritizes transcription factors based on the overlap between given lists of differentially expressed genes, and previously annotated TF targets assembled from multiple resources. ChEA3 is a web-based TFEA tool."
+
+Batch effect için Ayşe'nin önerisi: https://support.bioconductor.org/p/100278/
+alterntifler combat ve sva
+
+Ali Osman: Limma- "removeBatchEffect" ile önce ve sonrası datayı kıyaslama fırsatı var. Deseq2'da output vermiyor corrected datayı.
+ 
+Ali Osman'ın proje analizi üzerine tartışma ile başlandı.
   
-<details>
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>19/3/23 RSG Yönetim Ekibiyle Bilgi Alışverişi</summary>
 
-### Toplantı 2
+### Toplantı 12
+Katılımcılar: Ravza Gür, Kübra Kubat, Ali Osman, Fatma Betül, Ayşe Gökçe
+
+Med&Omics nedir ne değildir tartışıldı.
+
+Ravza: Sempozyuma eklenebilir ve tanıtımı yapılabilir
+Farkındalık için ek medikal alanda yan sempozyum
+Klinikten gelenler için slack kanalı
+Ali Osman: Kısa tanıtım seminer serisi ile ilgili olanları belirlemek
+Ali Osman ve Mustafa: Aşina olmak önemli bu grup bu konuda önemli
+Ali Osman: JC grupları, benzer konu ilgisi olan max 5-6 kişiden oluşursa daha etkili olabilir
+Med&Omics JC için ilgili bireylere açık olması
+
+Bir sonraki toplantı için ne yapılabilir:
+
+* RNA-Seq Analiz tekrar
+-R şu sayfa güzel bence ilk eğitim için https://www.tutorialspoint.com/r/index.htm
+-DEseq analizi için baştan sona bana çok faydalı kaynak: https://chagall.med.cornell.edu/RNASEQcourse/Intro2RNAseq.pdf
+* Command Line Tools/Linux giriş
+-Örnek eğitim: https://github.com/rsgturkey/Workshop2021 
+-Mac-> Terminal var; Windows-> için Ubuntu LTS indirebilir Microsoft 
+* Makale oylamaca, analiz bakmaca
+* SNP Analizi
+* CNV/Tumor Heterogeneity/Clonality Analizi
+
+Bir sonraki dersin içeriği ve bir sonraki okunacak makale (1-2 ay süre verilerek)
   
-<details>
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>x/4/22 Coming Soon</summary>
 
-### Toplantı 2
+### Toplantı 13
   
-<details>
+</details>
 ---------------------
-<details>
 
-<summary>9/4/22 Başlangıç</summary>
 
-### Toplantı 2
   
-<details>
+
