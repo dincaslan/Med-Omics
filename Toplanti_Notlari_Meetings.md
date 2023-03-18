@@ -88,7 +88,7 @@ Over representation analizi: Temel olarak manual olan listeler var (genler birbi
 
 Şimdilik ikinci toplantı ödevi olarak STRING üzerinden hipotezinizde ilişkili gen ailesini STRING üzerinden incelemek diyebiliriz.
   
-<details>
+</details>
 
 ---------------------
 <details>
@@ -150,7 +150,7 @@ Expression Atlas, https://www.ebi.ac.uk/gxa/home
 Doku özel, ifade değerine bakmak için faydalı olabilir
 Firebrowse da işe yarayabilir, http://firebrowse.org/viewGene.html
   
-<details>
+</details>
 
 ---------------------
 <details>
@@ -159,7 +159,7 @@ Firebrowse da işe yarayabilir, http://firebrowse.org/viewGene.html
 
 ### Toplantı 2
   
-<details>
+</details>
 ---------------------
 <details>
 
