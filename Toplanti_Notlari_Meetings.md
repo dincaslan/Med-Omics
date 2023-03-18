@@ -452,11 +452,12 @@ Bir sonraki dersin içeriği ve bir sonraki okunacak makale (1-2 ay süre verile
 ---------------------
 <details>
 
-<summary>x/4/22 Coming Soon</summary>
+<summary> Stay Tuned </summary>
 
 ### Toplantı 13
   
 </details>
+
 ---------------------
 
 
