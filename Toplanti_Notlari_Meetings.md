@@ -124,11 +124,13 @@ https://www.youtube.com/watch?v=lcfrqe3gvr4&t=2751s
 Ayşe geri-dönüt: Birbirine bağlanıyorlarsa, direk ilişkili olmaları normal. Ancak, negatif-pozitif korelasyon, aileler içindeki genleri işlevlerini tanımlamak açısından faydalı olabilir. Kısacası bir bütün olarak çalışmak.
 Metastaz verisi yoksa, metastazı işaret eden EMT marker (belirteç) bakılabilir.
 cBioportal'daki XXX(RAC1) geni negatif ve pozitif ilşkili genleri ayrı ayrı alıp, STRING'e koyup aralarında EMT işareti gösteren bir ilişki var mı yok mu ayrıca bakılabilir.
+
 Sağlıklı dokular üzerinden, doku özelinde gen ifade verisi: gtex, https://gtexportal.org/home/
+
 Normal ve. kanser:
-ccle, https://sites.broadinstitute.org/ccle/
-nci-60, https://dtp.cancer.gov/discovery_development/nci-60/
-ucsc-xena, https://xenabrowser.net/
+* ccle, https://sites.broadinstitute.org/ccle/
+* nci-60, https://dtp.cancer.gov/discovery_development/nci-60/
+* ucsc-xena, https://xenabrowser.net/
 
 Ayşe, XenaBrowser demo gösterimi.
 
@@ -212,11 +214,11 @@ Bir sonraki toplantı hedefi: RNA-seq dizileme analizi giriş, R'da differensiye
 Katılımcılar: Mustafa, Ali Osman, Ayşe Gökçe, Fatma Betül
 
 Ayşe: RNA-Seq intro tutorial
-Microarray vs. RNA-Seq
-How RNA-seq is done briefly
-Steps of RNA-Seq from RNA isolation to analysis
-Fastq file format
-RNA Seq analysis from quality control to normalization/differential gene expression analysis
+* Microarray vs. RNA-Seq
+* How RNA-seq is done briefly
+* Steps of RNA-Seq from RNA isolation to analysis
+* Fastq file format
+* RNA Seq analysis from quality control to normalization/differential gene expression analysis
 
 Ve bunların ardından
 Galaxy ile RNA-seq diferansiyel veri analizi: https://usegalaxy.org/
