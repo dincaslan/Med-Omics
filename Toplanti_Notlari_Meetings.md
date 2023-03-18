@@ -155,27 +155,130 @@ Firebrowse da işe yarayabilir, http://firebrowse.org/viewGene.html
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>22/5/22 Mustafa ve Ali Osman, kısaca paylaşım</summary>
 
-### Toplantı 2
+### Toplantı 4
+Katılımcılar: Mustafa, Ali Osman, Ayşe Gökçe, Fatma Betül
+
+Mustafa: EGFR vs. RASA1
+
+Ayşe geridönüt: 
+Kanserde survival datası için mutasyon verisi karşılaştırmak istiyorsak, vaka sayısının (number of cases) 100 ve üstü olması, 
+ve karşlaştırılan genleri hasta gruplarının benzer büyüklükte olması önemli.
+Bunları nerede bulabiliriz? Genom sekanslama ya da mutation profiling datasetlerine bakmak lazım.
+
+Farklı dokuları kıyaslarken de doku specific mi bir farklılık olduğuna bakmak lazım. Primary bir doku vs. normal doku kıyaslama yapılırken farklı doku kıyaslaması direk yapılması tavsiye edilmez.
+
+Kalsiyum bağımlı analiz yapmak çok genel olur. Spesifik downstream yolaklardan gitmek daha mantıklı olabilir.
+
+Co-occurance durumun olabilir mutasyonlarda. Bu durumda tümörün surivalını artırıyor olabilir. 
+Survival analizi yaparken overall survival yerine disease-free survival'a bakmak bu açıdan daha faydalı olabilir.
+Beraber hareket ettikleri genlerin durumuna da bakılabilir. Hangi yolakta etkili. Bu durumda belki bir "cluster" (grupsallık) mevcut olabilir.
+
+Bir genin inaktive olduğuna bakmak için genelde downstream genine bakılır. Mesela p53 için p21 gibi.
+
+Ali Osman: R'da gene ko-expresyon analizi nasıl yapılır üzerine çalışmış.
+WGCNA paketi üzerinden analiz yapmış. 
+Link: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559
+
+PCA alternatifi olarak t-SNE (t-distributed stochastic neighbour embedding): https://www.nature.com/articles/s41467-019-13056-x
+Good read on t-SNE: https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/
+
+Ayşe geridönüt:
+Spearman'da WGCNA'de uygun.
+
+TCGA'da datasetler daha büyük olduğu için RSEM'in kullandığı distribution-based method daha uygun olduğu için.
+
+TCGA verileri RSEM normalized count data oluyor. RSEM üzerine: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323
+
+Bu yüzden raw count data isteyen DESeq2 workflowu için uygun değil. 
+
+WGCNA için RSEM normalize edilmiş veri: "The RNA-Seq data input for WGCNA in terms of gene co-expression network construction?"
+Biostars'da soru ve cevap: https://www.biostars.org/p/280650/
+"Whether one uses RPKM, FPKM, or simply normalized counts doesn't make a whole lot of difference for WGCNA analysis as long as all samples were processed the same way"
+
+High throughput dizilime analizi için normalizasyon teknikleri üzerine: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0778-7
+
+Bir sonraki toplantı hedefi: RNA-seq dizileme analizi giriş, R'da differensiyel gen ifadesi analizi örnek
   
 </details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>11/6/22 Toplantı </summary>
 
-### Toplantı 2
+### Toplantı 5
+Katılımcılar: Mustafa, Ali Osman, Ayşe Gökçe, Fatma Betül
+
+Ayşe: RNA-Seq intro tutorial
+Microarray vs. RNA-Seq
+How RNA-seq is done briefly
+Steps of RNA-Seq from RNA isolation to analysis
+Fastq file format
+RNA Seq analysis from quality control to normalization/differential gene expression analysis
+
+Ve bunların ardından
+Galaxy ile RNA-seq diferansiyel veri analizi: https://usegalaxy.org/
+
+Ek notlar (fb)
+RNA-Seq genel girişi, başta sona: https://chagall.med.cornell.edu/RNASEQcourse/Intro2RNAseq.pdf
+Illumina dizilim kısaca: https://www.youtube.com/watch?v=fCd6B5HRaZ8
+uzunca: https://www.youtube.com/watch?v=oIJaA6h2bFM
+FastQC detaylı açıklama: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
   
-<details>
+</details>
+
 ---------------------
 <details>
 
-<summary>9/4/22 Başlangıç</summary>
+<summary>25/6/22 MednOmics Genel Bakış </summary>
 
-### Toplantı 2
+### Toplantı 6
+Katılımcılar: Mustafa, Ali Osman, Ayşe Gökçe, Fatma Betül
   
-<details>
+Bugün genel olarak program nasıl geçti, neleri öğrenmek iyiydi, nereler eksik kaldı (öğrenecek yeni konular) gibi soruları cevapladık.
+
+* cBioPortal
+* STRING
+* Geo Database/GEO2R
+* GALAXY
+gibi araçlara aşinalık kazanıp,
+
+* Survival Graphs
+* FDR, q value
+ve diğer bazı grafik yorumlama ve istatistik analizler konusunda altyapı kazanmanın epey faydalı olduğuna kanaat getirildi.
+
+Ancak, RNA-Seq ve R'da analiz gibi medikal öğrencilerin sıklıkla kullanmadığı teknik ve yöntemleri kullanırken biraz daha katılımcıların aktif olması ve ön araştırma yapması gerektiği sonucuna varıldı.
+Bu konuda mentorler olarak teşvik etmek için "Aşinalık kazandıracak soru listesi", "Worksheet" gibi ön ödevlerle öğrencilerin aktif katılımının ve aşinalık aşamasının hızlandırılması önerildi.
+
+Öte yandan, bir hipotez üzerinde tartışma ve ilerlemenin iyileştirilmesi konusunda 2 öneri sunuldu:
+1- önceden planlanmış veyahut hazır bir hipotezin adım adım takip edilmesi
+2- gruplar oluşturup, katılımcıların kendi hipotezleri ile grup olarak çalışması
+
+Gelecek için de şunlar planlandı:
+* İstatistik için ayrı bir ders. Böylece FDR, Enrichment Analysis, parametricve non-parametric testler gibi konular ve ayrımların daha detaylı tartışılması. 
+Bunun için şu öne çıktı: 
+1- Önce teorik ders (ilk zoom)
+2- Sonra R'da uygulamalı bio-istatistik (ikinci zoom)
+
+Bunun haricinde
+* Expression Atlas gibi araçların da etkin kulanımının faydasının öne çıkarılması, mesela "hangi gen hangi durumda hangi dokuda farklı davranmış" ve "meta-analizler"de kullanışlı olması gibi bilgilerin gözden kaçması ihtimaline karşı, eski notlara bir geri bakış tavsiye edildi.
+
+* Single-cell RNA seq giriş dersi (Fatma)
+
+* Multi-modal sequencing approaches
+* Differential co-expression networks/analysis
+gibi konuların Jouurnal club gibi 15dklık bir makale tartışmasını takiben method üzerinde yoğunlaşarak anlatılması/çalışılmasına karar kılındı.
+
+* Özellikle medikal öğrencilerin biyoenformatik eğitimi konusunda nerden başlaması ve nasıl ilerlemesi konusunda örnek kaynak listesi oluşturulmasına karar verildi. 
+Bu amaçla 3 adımdan bahsedildi:
+1- RSG Blog'da öncü köşe yazısı (ilk deneyimlerimiz)
+2- RSG Blog'da serinin devamı yazımız, gelecek deneyimlerimizle.
+3- Bütün bunların "Bootcamp" olarak bir website ve github kaynak listesinde detaylı olarak toplanıp halka açık kaynak olarak arz edilmesi.
+  
+</details>
+
 ---------------------
 <details>
 
