@@ -454,6 +454,73 @@ Bir sonraki dersin içeriği ve bir sonraki okunacak makale (1-2 ay süre verile
 ---------------------
 <details>
 
+<summary> 2/4/23 RNA-Seq Giriş Tekrar ve R üzerinden uygulamalı diferansiyel gen hesaplaması </summary>
+
+### Toplantı 13
+
+Katılımcılar: Kübra, Ali Osman, Fatma Betül, Ayşe Gökçe, Mustafa
+
+RNA-Seq giriş, tekrar edildi
+(bu sefer bu slayt üzerinden https://www.slideshare.net/secret/LUse5rEoBr30i)
+
+Bu çerçevede şunlar tartışıldı:
+
+* Library prep yöntemi olarak rRNA depletion vs. polyA enrichment 
+
+* Covarage-sequencing depth
+
+* Single vs. paired end reading
+
+* Downstream analiz için gereken replika sayıları
+
+* Publicly available raw fastq RNA-seq data için Asya, Amerika ve Avrupa bazlı 3 ana depolama merkezi: DDBJ, NCBI-SRA, EMBL-EBI/ENA
+
+* FastqQC-Babraham Institute, https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+* Reference file-FASTA(.fa) vs. Annotation file-GTF/GFF(.gtf/.gff)
+Nereden çekilebilir bunlar: örnek https://www.gencodegenes.org/human/
+
+* Read alignment/mapping to a reference genome and count data retrieval with annotation file (HTSeq vs. featureCounts)
+(alignment output file format: .bam  whereas annotated raw count data file format: .csv/.txt)
+
+* Alignment dosyasına göz gezdirmek için IGV: https://software.broadinstitute.org/software/igv/
+
+* Normalizasyon neden önemli, normalizasyon yaparken dikkat edilen temel unsurlar: Gene/Transcript Length vs. Sequencing Depth
+
+* Gene length normalizasyon yaparken intron dahil ediliyor mu? Exon based-(örnek bazı tartışmalar: https://www.biostars.org/p/176383/ , https://www.biostars.org/p/317962/
+ , https://www.biostars.org/p/185665/ , https://www.biostars.org/p/185665/
+
+" 
+type 1: mean of lengths of isoforms.
+
+type 2: median of lengths of isoforms.
+
+type 3: max of lengths of isoforms.
+
+type 4: length of merged exons of isoforms. 
+
+" )
+
+* DESeq2 vs. Limma üzerinden iki ayrı uygulamalı R differential gene expression analizi, data formatları, normalizasyon stratejileri
+
+* Neden dimensional reduction? PCA kullanımı, PCA için iki ayrı methoddan bahsetti. PCA alternatif olarak Multidimensional scaling (mds)
+
+* Multiple test correction nedir, ne değildir (https://www.stat.berkeley.edu/~mgoldman/Section0402.pdf , https://physiology.med.cornell.edu/people/banfelder/qbio/resources_2008/1.5_GenespringMTC.pdf )
+
+* PCA vs. tSNE (https://stats.stackexchange.com/questions/238538/are-there-cases-where-pca-is-more-suitable-than-t-sne , https://www.kaggle.com/code/agsam23/pca-vs-t-sne)
+[Düzeltme: tSNE vs. UMAP üzerinden dönen tartışma local değil global structure korunması üzerine]
+bir minimum tartışma görmedim ama seçtiğiniz minimum k-neighnour'a göre değişecektir: https://www.bioinformatics.babraham.ac.uk/training/10XRNASeq/Dimension%20Reduction.pdf
+
+- Haftaya genome analizi
+- Sonra SNP analizi
+- Daha sonra Copy Number analizi
+  
+</details>
+
+---------------------
+
+<details>
+
 <summary> Stay Tuned </summary>
 
 ### Toplantı 13
@@ -461,7 +528,6 @@ Bir sonraki dersin içeriği ve bir sonraki okunacak makale (1-2 ay süre verile
 </details>
 
 ---------------------
-
 
   
 
