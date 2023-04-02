@@ -467,15 +467,15 @@ Bu çerçevede şunlar tartışıldı:
 
 * Library prep yöntemi olarak rRNA depletion vs. polyA enrichment 
 
-* Covarage-sequencing depth
+* Covarage ve sequencing depth
 
-* Single vs. paired end reading
+* Single vs. paired end sequencing 
 
 * Downstream analiz için gereken replika sayıları
 
 * Publicly available raw fastq RNA-seq data için Asya, Amerika ve Avrupa bazlı 3 ana depolama merkezi: DDBJ, NCBI-SRA, EMBL-EBI/ENA
 
-* FastqQC-Babraham Institute, https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+* FastQC-Babraham Institute, https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 * Reference file-FASTA(.fa) vs. Annotation file-GTF/GFF(.gtf/.gff)
 Nereden çekilebilir bunlar: örnek https://www.gencodegenes.org/human/
