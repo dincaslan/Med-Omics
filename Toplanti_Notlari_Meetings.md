@@ -509,7 +509,7 @@ type 4: length of merged exons of isoforms.
 
 * PCA vs. tSNE (https://stats.stackexchange.com/questions/238538/are-there-cases-where-pca-is-more-suitable-than-t-sne , https://www.kaggle.com/code/agsam23/pca-vs-t-sne)
 [Düzeltme: tSNE vs. UMAP üzerinden dönen tartışma local değil global structure korunması üzerine]
-bir minimum tartışma görmedim ama seçtiğiniz minimum k-neighnour'a göre değişecektir: https://www.bioinformatics.babraham.ac.uk/training/10XRNASeq/Dimension%20Reduction.pdf
+bir minimum tartışma görmedim ama seçtiğiniz minimum gruba göre değişecektir: https://www.bioinformatics.babraham.ac.uk/training/10XRNASeq/Dimension%20Reduction.pdf
 
 - Haftaya genome analizi
 - Sonra SNP analizi
