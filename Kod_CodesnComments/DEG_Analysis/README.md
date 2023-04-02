@@ -1,3 +1,7 @@
-R'da Deseq ve Limma ile Diferansiyel Gen Ifadesi Analizi
+R'da Deseq ve Limma ile Diferansiyel Gen Ifadesi Analizi 
 -----------------------
-Differential Gene Expression Analysis with Deseq2 and Limma packages in R
+Differential Gene Expression Analysis with Deseq2 and Limma packages in R (for Bulk RNA-Seq)
+
+Ornek Kodlar
+------------
+Example Codes
